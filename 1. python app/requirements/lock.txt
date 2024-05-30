@@ -1,0 +1,16 @@
+attrs==23.2.0
+blinker==1.8.2
+click==8.1.7
+colorama==0.4.6
+Flask==3.0.3
+itsdangerous==2.2.0
+Jinja2==3.1.4
+jsonschema==4.22.0
+jsonschema-specifications==2023.12.1
+MarkupSafe==2.1.5
+numpy==1.26.4
+ply==3.11
+referencing==0.35.1
+rpds-py==0.18.1
+taskbot==0.0.1
+Werkzeug==3.0.3
