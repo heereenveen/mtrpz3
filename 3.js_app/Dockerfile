@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:14-alpine AS build
 
 WORKDIR /usr/src/app
 
@@ -7,6 +7,12 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
+
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+COPY --from=build /usr/src/app .
 
 EXPOSE 3000
 
